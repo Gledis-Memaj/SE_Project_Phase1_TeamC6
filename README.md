@@ -10,7 +10,7 @@
 1.	Dea Caushi - GitHub: Dea-Caushi – Email: dcaushi23@epoka.edu.al
 2.	Inis Roboçi - GitHub: Inis-Roboci – Email: iroboci23@epoka.edu.al
 3.	Kejsi Furxhi - GitHub: Kejsi-Furxhi – Email: kfurxhi23@epoka.edu.al
-4.	Suela Hasanaj - GitHub: Suela-Hasanaj – Email: shasanaj23@epoka.edu,al
+4.	Suela Hasanaj - GitHub: Suela-Hasanaj – Email: shasanaj23@epoka.edu.al
 
 # Project Details
 Project Title: Residential Management System
