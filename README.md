@@ -35,7 +35,7 @@ Our proposed solution is a Residential Management System that functions as a bri
 ## Application Description:
 The Residential Management System consists of two main users: Administrator & Resident. 
 -Administrators are able to manage the apartments and residents of different complexes, track payment developments for each tenant, post about necessary announcements. 
--Residents are able to view their upcoming payment details and status and get notified about new updates.
+-Residents are able to view their upcoming payment details and status and get notified about new updates, as well as view handyman's contact information.
 
 # Roles and Tasks
 ## Team Leader: Gledis Memaj
