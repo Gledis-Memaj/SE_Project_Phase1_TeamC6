@@ -19,33 +19,33 @@ This model is suitable because our team is working in parallel on different modu
 ### a. Stakeholders (WHO is involved)
 
 #### Stakeholder: Administrators
-Role: Administrators are responsible for managing and monitoring payments within their assigned buildings. They can view all residents assigned to a building, their payments, verify who has made payments and confirm them once received. Administrators also maintain records of all payments (paid or pending), filter payment data based on criteria such as date, status, building. Additionally, administrators can post announcements for residents and assign a priority level to each announcement (Low, Normal, High, Urgent) to indicate its importance
+**Role:** Administrators are responsible for managing and monitoring payments within their assigned buildings. They can view all residents assigned to a building, their payments, verify who has made payments and confirm them once received. Administrators also maintain records of all payments (paid or pending), filter payment data based on criteria such as date, status, building. Additionally, administrators can post announcements for residents and assign a priority level to each announcement (Low, Normal, High, Urgent) to indicate its importance
 
-Interests: Efficient payment tracking, easy filtering of data leading to better organization and simpler management.
+**Interests:** Efficient payment tracking, easy filtering of data leading to better organization and simpler management.
 
 
 #### Stakeholder: Residents	
-Role: Residents use the system to track their financial obligations, including rent, parking and maintenance fees. They can view which payments are completed or pending, apply filters based on type and status, as well as mark payments as paid. Residents can also view announcements made by administrators, book handyman services by selecting a preferred date and time and track all booked services along with their status as well as receive real-time notifications about important updates such as payments, bookings and annucments.
+**Role:** Residents use the system to track their financial obligations, including rent, parking and maintenance fees. They can view which payments are completed or pending, apply filters based on type and status, as well as mark payments as paid. Residents can also view announcements made by administrators, book handyman services by selecting a preferred date and time and track all booked services along with their status as well as receive real-time notifications about important updates such as payments, bookings and annucments.
 
-Interests: Quick access to information, easy payment tracking, convenient service booking and faster problem-solving.	
+**Interests:** Quick access to information, easy payment tracking, convenient service booking and faster problem-solving.	
 
 
 #### Stakeholder: Handymen
-Role: Handymen are responsible for responding to and managing maintenance requests submitted by residents. They can view incoming requests, accept or reject them based on their availability and update the status of accepted tasks. Once the work is completed, they can mark the request as completed.	
+**Role:** Handymen are responsible for responding to and managing maintenance requests submitted by residents. They can view incoming requests, accept or reject them based on their availability and update the status of accepted tasks. Once the work is completed, they can mark the request as completed.	
 
-Interests: Clear task management, efficient scheduling, and the ability to manage workload based on availability.
+**Interests:** Clear task management, efficient scheduling, and the ability to manage workload based on availability.
 
 
 #### Stakeholder: Super Admin
-Role: The Super Admin has full control over the system. They are responsible for managing all users and system data, including creating, editing and deleting Admins, Residents and Handymen. The Super Admin also manages buildings and apartments and assigns users to specific apartments.
+**Role:** The Super Admin has full control over the system. They are responsible for managing all users and system data, including creating, editing and deleting Admins, Residents and Handymen. The Super Admin also manages buildings and apartments and assigns users to specific apartments.
 
-Interests: Ensuring the system is well-organized, secure and efficiently managed.
+**Interests:** Ensuring the system is well-organized, secure and efficiently managed.
 
 
 #### Stakeholder: Developers
-Role: Responsible for designing, developing, testing and maintaining the system. They ensure the system works correctly, is secure and meets user requirements.
+**Role:** Responsible for designing, developing, testing and maintaining the system. They ensure the system works correctly, is secure and meets user requirements.
 
-Interests: Building a reliable, efficient and user-friendly system, as well as ensuring system performance and security.
+**Interests:** Building a reliable, efficient and user-friendly system, as well as ensuring system performance and security.
 
 
 ### b. User Stories (WHAT they need and WHY)
@@ -247,7 +247,7 @@ The database includes tables such as Users, Buildings, Apartments, Payments, Boo
 Each building contains multiple apartments and each apartment is assigned to a resident. Users have different roles such as Super Admin, Admin, Resident and Handyman. Payments are linked to both residents and apartments and include details such as type, amount, due date and status. Bookings are linked to residents and handymen and store service date, time and status information. Announcements are linked to buildings and include priority levels such as low, normal, high and urgent. Notifications are linked to users and store system updates like payments, bookings and announcements.
 The email field and username in the Users table is unique and foreign key constraints ensure that all relationships between users, apartments and buildings remain valid.
 
-### c. Technologies Used (po jua lej juve)
+### c. Technologies Used
 The system is developed using Python for backend development due to its simplicity and flexibility in handling business logic and APIs. The frontend uses HTML, CSS and JavaScript to create a responsive and user-friendly interface for all system users. Bootstrap is used to improve the design and ensure mobile responsiveness.
 MySQL is used as the database for efficient and structured data management, including users, payments, bookings and notifications.
 
