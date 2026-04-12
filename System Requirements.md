@@ -2,41 +2,54 @@
 # Residential Management System (RMS)
 
 
+
 ## 1. Chosen Development Model
-We chose the Agile development model because it allows flexibility and continuous improvement throughout the development process. Since the Residential Management System includes multiple features, requirements may evolve during development.
-This model was selected because:
+We chose the Agile development model because it allows flexibility and continuous improvement throughout the development process. Since the Residential Management System includes multiple features, requirements may evolve during development. This model was selected because:
 - While building the system it allows us to work in small parts, not all at once.
 - It helps the team to work, share ideas and solve problems.
 - When plans or ideas change, they can be easily changed.
 - Helps in testing often by checking the work and feedback. 
 - Provides faster problem detection and better system quality.
+
 This model is suitable because our team is working in parallel on different modules and Agile helps us integrate and improve them at the same time.
 
 
-## 3. User Requirements
+
+## 2. User Requirements
 ### a. Stakeholders (WHO is involved)
 
 #### Stakeholder: Administrators
 Role: Administrators are responsible for managing and monitoring payments within their assigned buildings. They can view all residents assigned to a building, their payments, verify who has made payments and confirm them once received. Administrators also maintain records of all payments (paid or pending), filter payment data based on criteria such as date, status, building. Additionally, administrators can post announcements for residents and assign a priority level to each announcement (Low, Normal, High, Urgent) to indicate its importance
+
 Interests: Efficient payment tracking, easy filtering of data leading to better organization and simpler management.
+
 
 #### Stakeholder: Residents	
 Role: Residents use the system to track their financial obligations, including rent, parking and maintenance fees. They can view which payments are completed or pending, apply filters based on type and status, as well as mark payments as paid. Residents can also view announcements made by administrators, book handyman services by selecting a preferred date and time and track all booked services along with their status as well as receive real-time notifications about important updates such as payments, bookings and annucments.
+
 Interests: Quick access to information, easy payment tracking, convenient service booking and faster problem-solving.	
+
 
 #### Stakeholder: Handymen
 Role: Handymen are responsible for responding to and managing maintenance requests submitted by residents. They can view incoming requests, accept or reject them based on their availability and update the status of accepted tasks. Once the work is completed, they can mark the request as completed.	
+
 Interests: Clear task management, efficient scheduling, and the ability to manage workload based on availability.
+
 
 #### Stakeholder: Super Admin
 Role: The Super Admin has full control over the system. They are responsible for managing all users and system data, including creating, editing and deleting Admins, Residents and Handymen. The Super Admin also manages buildings and apartments and assigns users to specific apartments.
+
 Interests: Ensuring the system is well-organized, secure and efficiently managed.
-	
+
+
 #### Stakeholder: Developers
 Role: Responsible for designing, developing, testing and maintaining the system. They ensure the system works correctly, is secure and meets user requirements.
+
 Interests: Building a reliable, efficient and user-friendly system, as well as ensuring system performance and security.
 
+
 ### b. User Stories (WHAT they need and WHY)
+
 #### 1. Administrator stories
 - As an Administrator, I want to view all residents assigned to my buildings so that I can manage them efficiently. 
 - As an Administrator, I want to view and track all payments so that I know who has paid and who has not. 
@@ -69,162 +82,157 @@ Interests: Building a reliable, efficient and user-friendly system, as well as e
 - As a Super Admin, I want to assign users to apartments so that each resident is properly linked to their living unit. 
 
 
+
 ## 3. Functional Requirements (what the system must do)
 ### a. Description
-The system should allow Super Admin to create, edit and delete user accounts (Admins, Residents, Handymen).
-The system should allow users to log in using their credentials. 
-The system should identify the user role (Super Admin, Admin, Resident, Handyman) and display the appropriate dashboard.
-The system should restrict access based on user roles (role-based access control). 
-The system should allow the Super Admin to create and manage buildings. 
-The system should allow the Super Admin to create and manage apartments. 
-The system should allow the Super Admin to assign residents to apartments. 
-The system should allow administrators to view buildings and apartments assigned to them.
-The system should allow administrators to view and manage residents within their assigned buildings. 
-The system should store and display resident information.
-The system should allow administrators to view all resident payments. 
-The system should allow administrators to confirm payments. 
-The system should store payment records (Paid, Pending). 
-The system should allow residents to view their payments (rent, parking, maintenance). 
-The system should allow residents to mark payments as paid. 
-The system should allow administrators to filter payments by: Date, Status, Building. 
-The system should allow residents to filter payments by: Type (rent, parking, maintenance) and Status 
-The system should allow multiple filters to be applied at the same time.
-The system should allow administrators to create and post announcements. 
-The system should allow administrators to assign priority levels (Low, Normal, High, Urgent) to announcements. 
-The system should allow residents to view announcements. 
-The system should allow residents to book handyman services by selecting date and time.
-The system should allow handymen to view maintenance requests. 
-The system should allow handymen to accept or reject requests based on availability. 
-The system should allow handymen to update request status (Completed). 
-The system should allow residents to view the status of their maintenance requests.
-The system should generate notifications for residents when: A new payment is created; A payment is confirmed; A new announcement is posted; A booking is accepted or completed. 
-The system should display notifications with title, message and timestamp. 
-The system should store notification history for each user. 
+- The system should allow Super Admin to create, edit and delete user accounts (Admins, Residents, Handymen).
+- The system should allow users to log in using their credentials. 
+- The system should identify the user role (Super Admin, Admin, Resident, Handyman) and display the appropriate dashboard.
+- The system should restrict access based on user roles (role-based access control). 
+- The system should allow the Super Admin to create and manage buildings. 
+- The system should allow the Super Admin to create and manage apartments. 
+- The system should allow the Super Admin to assign residents to apartments. 
+- The system should allow administrators to view buildings and apartments assigned to them.
+- The system should allow administrators to view and manage residents within their assigned buildings. 
+- The system should store and display resident information.
+- The system should allow administrators to view all resident payments. 
+- The system should allow administrators to confirm payments. 
+- The system should store payment records (Paid, Pending). 
+- The system should allow residents to view their payments (rent, parking, maintenance). 
+- The system should allow residents to mark payments as paid. 
+- The system should allow administrators to filter payments by: Date, Status, Building. 
+- The system should allow residents to filter payments by: Type (rent, parking, maintenance) and Status 
+- The system should allow multiple filters to be applied at the same time.
+- The system should allow administrators to create and post announcements. 
+- The system should allow administrators to assign priority levels (Low, Normal, High, Urgent) to announcements. 
+- The system should allow residents to view announcements. 
+- The system should allow residents to book handyman services by selecting date and time.
+- The system should allow handymen to view maintenance requests. 
+- The system should allow handymen to accept or reject requests based on availability. 
+- The system should allow handymen to update request status (Completed). 
+- The system should allow residents to view the status of their maintenance requests.
+- The system should generate notifications for residents when: A new payment is created; A payment is confirmed; A new announcement is posted; A booking is accepted or completed. 
+- The system should display notifications with title, message and timestamp. 
+- The system should store notification history for each user. 
+
 
 ### b. Acceptance Criteria (When we know it WORKS correctly)
-- User Login
-Acceptance Criteria:
-User enters valid username and password 
-System verifies credentials from the database 
-User is redirected to the correct dashboard based on role 
-System denies access for invalid credentials 
-Error message is displayed for incorrect login attempts 
-Unauthorized users cannot access restricted pages
-System identifies user role (Super Admin, Admin, Resident, Handyman) 
+#### User Login Acceptance Criteria:
+- User enters valid username and password 
+- System verifies credentials from the database
+- User is redirected to the correct dashboard based on role
+- System denies access for invalid credentials
+- Error message is displayed for incorrect login attempts
+- Unauthorized users cannot access restricted pages
+- System identifies user role (Super Admin, Admin, Resident, Handyman) 
 
-- User Management 
-Acceptance Criteria:
-Super Admin can create new users (Admin, Resident, Handyman) 
-Super Admin can edit user details 
-Super Admin can delete user accounts 
-Changes are saved in the database 
-Users can log in using created credentials 
-Only Super Admin can access user management panel 
+#### User Management Acceptance Criteria:
+- Super Admin can create new users (Admin, Resident, Handyman)
+- Super Admin can edit user details
+- Super Admin can delete user accounts
+- Changes are saved in the database
+- Users can log in using created credentials
+- Only Super Admin can access user management panel 
 
-- Building & Apartment Management
-Acceptance Criteria:
-Super Admin can create and delete buildings 
-Super Admin can create apartments inside buildings 
-Super Admin can assign users to apartments 
-Data is stored correctly in the database 
+#### Building & Apartment Management Acceptance Criteria:
+- Super Admin can create and delete buildings
+- Super Admin can create apartments inside buildings
+- Super Admin can assign users to apartments
+- Data is stored correctly in the database 
 
-- Payment Management (Admin + Resident)
-Acceptance Criteria:
-Residents can view all their payments 
-Payments display correct type, amount, due date, status
-Admin can view all payments per building 
-Admin can confirm payments 
-Payment status updates correctly in the system 
-Payment history is stored and visible 
+#### Payment Management (Admin + Resident) Acceptance Criteria:
+- Residents can view all their payments
+- Payments display correct type, amount, due date, status
+- Admin can view all payments per building
+- Admin can confirm payments
+- Payment status updates correctly in the system
+- Payment history is stored and visible 
 
-- Payment Filtering
-Acceptance Criteria:
-Admin can filter payments by date 
-Admin can filter payments by status 
-Admin can filter payments by building 
-Admin can apply multiple filters at the same time 
-System displays correct filtered results 
-Filters can be reset to show all data 
+#### Payment Filtering Acceptance Criteria:
+- Admin can filter payments by date
+- Admin can filter payments by status
+- Admin can filter payments by building
+- Admin can apply multiple filters at the same time
+- System displays correct filtered results
+- Filters can be reset to show all data 
 
-- Announcements
-Acceptance Criteria:
-Admin can create announcements 
-Admin can assign priority level (Low, Normal, High, Urgent) 
-Announcements are stored in the system 
-Residents can view announcements 
-Announcements are displayed in correct order 
-High priority announcements are clearly visible 
+#### Announcements Acceptance Criteria:
+- Admin can create announcements
+- Admin can assign priority level (Low, Normal, High, Urgent)
+- Announcements are stored in the system
+- Residents can view announcements
+- Announcements are displayed in correct order
+- High priority announcements are clearly visible 
 
-- Maintenance & Handyman System
-Acceptance Criteria:
-Residents can book handyman services with date and time 
-Booking is saved in the system 
-Handyman can view all assigned requests 
-Handyman can accept or reject requests 
-Handyman can update request status after accepted (Completed) 
-Residents can view status updates 
-Residents receive updates when status changes 
+#### Maintenance & Handyman System Acceptance Criteria:
+- Residents can book handyman services with date and time
+- Booking is saved in the system
+- Handyman can view all assigned requests
+- Handyman can accept or reject requests
+- Handyman can update request status after accepted (Completed)
+- Residents can view status updates
+- Residents receive updates when status changes 
 
-- Notifications System
-Acceptance Criteria:
-Resident receives notification when a payment is created 
-Resident receives notification when payment is confirmed 
-Resident receives notification for new announcements 
-Resident receives notification when booking is accepted/rejected or completed 
-Notifications display title, message and timestamp 
-Notifications are stored and appear in correct order (latest first) 
+#### Notifications System Acceptance Criteria:
+- Resident receives notification when a payment is created
+- Resident receives notification when payment is confirmed
+- Resident receives notification for new announcements
+- Resident receives notification when booking is accepted/rejected or completed
+- Notifications display title, message and timestamp
+- Notifications are stored and appear in correct order (latest first) 
+
 
 
 ## 4. Non-Functional Requirements (How well the system should work)
 ### a. Description
-The system should load quickly and respond to user actions within a few seconds. 
-The system should be user-friendly and easy to navigate for all user types. 
-The system should be secure and protect user data from unauthorized access. 
-The system should ensure role-based access control for all users. 
-The system should ensure data accuracy and consistency across all modules. 
-The system should provide a responsive design that works on different devices (desktop, tablet, mobile). 
-The system should ensure reliable storage of all data including payments, bookings and notifications. 
-The system should maintain system stability even under heavy usage. 
-The system should ensure notifications are delivered in real time. 
-The system should protect passwords using encryption and secure authentication methods.
+- The system should load quickly and respond to user actions within a few seconds.
+- The system should be user-friendly and easy to navigate for all user types.
+- The system should be secure and protect user data from unauthorized access.
+- The system should ensure role-based access control for all users.
+- The system should ensure data accuracy and consistency across all modules.
+- The system should provide a responsive design that works on different devices (desktop, tablet, mobile).
+- The system should ensure reliable storage of all data including payments, bookings and notifications.
+- The system should maintain system stability even under heavy usage.
+- The system should ensure notifications are delivered in real time.
+- The system should protect passwords using encryption and secure authentication methods.
 
 ### b. Acceptance Criteria
-- Speed
-Acceptance Criteria:
-Pages load in under 2 seconds 
-Dashboard actions (viewing payments, announcements, bookings) should respond within 2 seconds.
-Booking process completes in under 5 seconds
+#### Speed Acceptance Criteria:
+- Pages load in under 2 seconds
+- Dashboard actions (viewing payments, announcements, bookings) should respond within 2 seconds.
+- Booking process completes in under 5 seconds
 
-- Usability
-New users should be able to navigate the system without training within 5 minutes. 
-All dashboards should have a clear and consistent layout across all user roles. 
-Key features (payments, announcements, bookings) should be accessible within 2 clicks from the dashboard. 
+#### Usability
+- New users should be able to navigate the system without training within 5 minutes.
+- All dashboards should have a clear and consistent layout across all user roles.
+- Key features (payments, announcements, bookings) should be accessible within 2 clicks from the dashboard. 
 
-- Reliability
-The system should always be available with minimal interruptions. 
-The system should not lose data during transactions (payments, bookings, notifications). 
-System errors should be handled without crashing the application
+#### Reliability
+- The system should always be available with minimal interruptions.
+- The system should not lose data during transactions (payments, bookings, notifications).
+- System errors should be handled without crashing the application
 
-- Security
-All passwords must be stored using encryption (hashing). 
-Unauthorized users should not be able to access restricted pages. 
-Role-based access control must prevent users from accessing unauthorized features 100% of the time. 
+#### Security
+- All passwords must be stored using encryption (hashing). 
+- Unauthorized users should not be able to access restricted pages. 
+- Role-based access control must prevent users from accessing unauthorized features 100% of the time. 
 
-- Scalability & Performance Under Load
-The system should support at least 50–100 concurrent users. 
-System response time should remain stable under multiple simultaneous requests
+#### Scalability & Performance Under Load
+- The system should support at least 50–100 concurrent users. 
+- System response time should remain stable under multiple simultaneous requests
 
-- Responsiveness
-The system should display correctly on desktop, tablet and mobile devices. 
-All pages should adapt to different screen sizes without breaking layout.
+#### Responsiveness
+- The system should display correctly on desktop, tablet and mobile devices.
+- All pages should adapt to different screen sizes without breaking layout.
 
-- Notifications
-Notifications should appear within 5 seconds after the event. 
-Users should be able to view all notifications instantly without page reload delays. 
+#### Notifications
+- Notifications should appear within 5 seconds after the event. 
+- Users should be able to view all notifications instantly without page reload delays. 
 
-- Data Integrity
-All system data must be stored correctly in the database. 
-Updates must reflect immediately in all related views. 
+ #### Data Integrity
+- All system data must be stored correctly in the database.
+- Updates must reflect immediately in all related views. 
+
 
 
 ## 5. Application Specifications (How the system is built technically)
