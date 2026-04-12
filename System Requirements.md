@@ -1,7 +1,7 @@
-Phase II: User Requirements and Application Specifications
-Residential Management System (RMS)
+#Phase II: User Requirements and Application Specifications
+#Residential Management System (RMS)
 
-1. Chosen Development Model
+##1. Chosen Development Model
 We chose the Agile development model because it allows flexibility and continuous improvement throughout the development process. Since the Residential Management System includes multiple features, requirements may evolve during development.
 This model was selected because:
 While building the system it allows us to work in small parts, not all at once.
@@ -12,8 +12,8 @@ Provides faster problem detection and better system quality.
 This model is suitable because our team is working in parallel on different modules and Agile helps us integrate and improve them at the same time.
 
 
-2. User Requirements
-a. Stakeholders (WHO is involved)
+##2. User Requirements
+###a. Stakeholders (WHO is involved)
 
 Stakeholder: Administrators
 Role: Administrators are responsible for managing and monitoring payments within their assigned buildings. They can view all residents assigned to a building, their payments, verify who has made payments and confirm them once received. Administrators also maintain records of all payments (paid or pending), filter payment data based on criteria such as date, status, building. Additionally, administrators can post announcements for residents and assign a priority level to each announcement (Low, Normal, High, Urgent) to indicate its importance
@@ -35,7 +35,7 @@ Stakeholder: Developers
 Role: Responsible for designing, developing, testing and maintaining the system. They ensure the system works correctly, is secure and meets user requirements.
 Interests: Building a reliable, efficient and user-friendly system, as well as ensuring system performance and security.
 
-b. User Stories (WHAT they need and WHY)
+###b. User Stories (WHAT they need and WHY)
 1. Administrator stories
 As an Administrator, I want to view all residents assigned to my buildings so that I can manage them efficiently. 
 As an Administrator, I want to view and track all payments so that I know who has paid and who has not. 
@@ -68,8 +68,8 @@ As a Super Admin, I want to create and manage buildings and apartments so that t
 As a Super Admin, I want to assign users to apartments so that each resident is properly linked to their living unit. 
 
 
-3. Functional Requirements (what the system must do)
-a. Description
+##3. Functional Requirements (what the system must do)
+###a. Description
 The system should allow Super Admin to create, edit and delete user accounts (Admins, Residents, Handymen).
 The system should allow users to log in using their credentials. 
 The system should identify the user role (Super Admin, Admin, Resident, Handyman) and display the appropriate dashboard.
@@ -100,7 +100,7 @@ The system should generate notifications for residents when: A new payment is cr
 The system should display notifications with title, message and timestamp. 
 The system should store notification history for each user. 
 
-b. Acceptance Criteria (When we know it WORKS correctly)
+###b. Acceptance Criteria (When we know it WORKS correctly)
 User Login
 Acceptance Criteria:
 User enters valid username and password 
@@ -174,8 +174,8 @@ Notifications display title, message and timestamp
 Notifications are stored and appear in correct order (latest first) 
 
 
-4. Non-Functional Requirements (How well the system should work)
-a. Description
+##4. Non-Functional Requirements (How well the system should work)
+###a. Description
 The system should load quickly and respond to user actions within a few seconds. 
 The system should be user-friendly and easy to navigate for all user types. 
 The system should be secure and protect user data from unauthorized access. 
@@ -187,7 +187,7 @@ The system should maintain system stability even under heavy usage.
 The system should ensure notifications are delivered in real time. 
 The system should protect passwords using encryption and secure authentication methods.
 
-b. Acceptance Criteria
+###b. Acceptance Criteria
 Speed
 Acceptance Criteria:
 Pages load in under 2 seconds 
@@ -226,26 +226,26 @@ All system data must be stored correctly in the database.
 Updates must reflect immediately in all related views. 
 
 
-5. Application Specifications (How the system is built technically)
-a. Architecture
+##5. Application Specifications (How the system is built technically)
+###a. Architecture
 The system follows a three-tier architecture consisting of a frontend (user interface), backend (business logic) and database (data storage).
 The frontend provides different dashboards for Super Admin, Admin, Residents and Handymen, allowing users to interact with the system. The frontend sends requests to the backend when users perform actions such as logging in, managing payments, booking maintenance services or viewing announcements.
 The backend processes all business logic, including authentication, role-based access control, payment management, notification handling and maintenance request processing. It also ensures that all rules of the system are correctly applied.
 The backend communicates with the database to store and retrieve all system data, such as users, buildings, apartments, payments, announcements, bookings and notifications. The database ensures that all information is stored securely and consistently.
 
-b. Database Model	
+###b. Database Model	
 The database includes tables such as Users, Buildings, Apartments, Payments, Bookings, Announcements, and Notifications.
 Each building contains multiple apartments and each apartment is assigned to a resident. Users have different roles such as Super Admin, Admin, Resident and Handyman. Payments are linked to both residents and apartments and include details such as type, amount, due date and status. Bookings are linked to residents and handymen and store service date, time and status information. Announcements are linked to buildings and include priority levels such as low, normal, high and urgent. Notifications are linked to users and store system updates like payments, bookings and announcements.
 The email field and username in the Users table is unique and foreign key constraints ensure that all relationships between users, apartments and buildings remain valid.
 
-c. Technologies Used (po jua lej juve)
+###c. Technologies Used (po jua lej juve)
 The system is developed using Python for backend development due to its simplicity and flexibility in handling business logic and APIs. The frontend uses HTML, CSS and JavaScript to create a responsive and user-friendly interface for all system users. Bootstrap is used to improve the design and ensure mobile responsiveness.
 MySQL is used as the database for efficient and structured data management, including users, payments, bookings and notifications.
 
-d. User Interface Design
+###d. User Interface Design
 The interface includes a login page and separate dashboards for Super Admin, Admin, Residents and Handymen. Each dashboard is designed according to the user role and provides access to relevant features such as payments, announcements, bookings and maintenance requests.
 The design is simple and user-friendly, with clear navigation menus and structured layouts. Key actions such as viewing payments, confirming requests, booking services and posting announcements are accessible through buttons and dashboard sections for easy use.
 
-e. Security Measures
+###e. Security Measures
 The system uses user authentication with secure login credentials to ensure that only authorized users can access the platform. Passwords are stored using encryption (hashing) to protect user data. The system implements role-based access control to ensure that each user can only access features allowed for their role. The system also protects data by ensuring secure communication between the frontend and backend and by validating all user inputs to prevent unauthorized actions.
 
