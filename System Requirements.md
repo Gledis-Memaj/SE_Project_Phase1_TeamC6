@@ -202,34 +202,34 @@ Interests: Building a reliable, efficient and user-friendly system, as well as e
 - Dashboard actions (viewing payments, announcements, bookings) should respond within 2 seconds.
 - Booking process completes in under 5 seconds
 
-#### Usability
+#### Usability Acceptance Criteria:
 - New users should be able to navigate the system without training within 5 minutes.
 - All dashboards should have a clear and consistent layout across all user roles.
 - Key features (payments, announcements, bookings) should be accessible within 2 clicks from the dashboard. 
 
-#### Reliability
+#### Reliability Acceptance Criteria:
 - The system should always be available with minimal interruptions.
 - The system should not lose data during transactions (payments, bookings, notifications).
 - System errors should be handled without crashing the application
 
-#### Security
+#### Security Acceptance Criteria:
 - All passwords must be stored using encryption (hashing). 
 - Unauthorized users should not be able to access restricted pages. 
 - Role-based access control must prevent users from accessing unauthorized features 100% of the time. 
 
-#### Scalability & Performance Under Load
+#### Scalability & Performance Under Load Acceptance Criteria:
 - The system should support at least 50–100 concurrent users. 
 - System response time should remain stable under multiple simultaneous requests
 
-#### Responsiveness
+#### Responsiveness Acceptance Criteria:
 - The system should display correctly on desktop, tablet and mobile devices.
 - All pages should adapt to different screen sizes without breaking layout.
 
-#### Notifications
+#### Notifications Acceptance Criteria:
 - Notifications should appear within 5 seconds after the event. 
 - Users should be able to view all notifications instantly without page reload delays. 
 
- #### Data Integrity
+ #### Data Integrity Acceptance Criteria:
 - All system data must be stored correctly in the database.
 - Updates must reflect immediately in all related views. 
 
