@@ -70,13 +70,13 @@ Database: Stores all system data such as users, payments, apartments, bookings a
 ![Class Diagram](images/Class%20Diagram.png)
 
 ### Sequence Diagrams
-![Sequence Diagram 1](images/Sequence%20Diagram%201.png)
+![Sequence Diagram 1](images/Sequence%20Diagram%201.jpeg)
 
-![Sequence Diagram 1](images/Sequence%20Diagram%202.png)
+![Sequence Diagram 1](images/Sequence%20Diagram%202.jpeg)
 
 ## 3. Modeling
 ### Use Case Diagram
-![Use Case Diagram](images/Use%20Case%20Diagram.png)
+![Use Case Diagram](images/Use%20Case%20Diagram.jpeg)
 
 ### Activity Diagrams
 ![Activity Diagram 1](images/Activity%20Diagram%201.png)
