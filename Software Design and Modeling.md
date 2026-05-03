@@ -29,6 +29,7 @@ All parts work together to handle user actions such as login, payments, bookings
 -	Backend inserts a new record into the bookings table in the Database
 -	Backend sends confirmation back to Frontend, confirms that booking has been created and returns booking status as “pending” 
 
+**The online website we used to draw the diagrams for Report 3 is: https://app.diagrams.net/**
 
 ### Component Diagram (UML)
 ![UML Diagram](images/UML%20Diagram.png)
