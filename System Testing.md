@@ -33,6 +33,8 @@ The test cases were designed to cover different scenarios of the Booking Handyma
 ## 5.1 Writing Test Code
 In the Booking Handyman Service component, error handling is mainly implemented through frontend form validation and database constraints.
 
+```html
+```html
 <input type="text" name="first_name" class="form-control" required>
 
 <select name="handyman_id" class="form-select" required>
@@ -40,10 +42,13 @@ In the Booking Handyman Service component, error handling is mainly implemented 
 <input type="date" name="preferred_date" class="form-control" required>
 
 <select name="preferred_time" class="form-select" required>
-    
+```
+
 These required attributes ensure that users cannot submit the form unless all mandatory fields are filled. This prevents empty or incomplete data from being sent to the backend.
+
 Additionally, the system handles special conditions in the interface:
 
+```html
 {% if not handymen %}
 
 <div class="alert alert-warning">No handymen are currently available.</div>
@@ -53,22 +58,27 @@ Additionally, the system handles special conditions in the interface:
 <div class="alert alert-warning">You are not assigned to any apartment yet.</div>
 
 {% endif %}
-
+```
 
 This ensures that users are informed when booking is not possible.
+
 On the backend, the system processes the data and stores it in the database:
 
+```python
 booking = Booking(...)
 
 db.session.add(booking)
 
 db.session.commit()
+```
 
 Further validation is enforced by the database model:
 
+```python
 first_name = db.Column(db.String(80), nullable=False)
 
 preferred_date = db.Column(db.Date, nullable=False)
+```
 
 These constraints ensure that required fields cannot be null, providing an additional layer of data integrity.
 
@@ -97,6 +107,7 @@ The create user function is also critical because it handles multiple inputs suc
 ## 5.2 Writing Test Code
 In the Super Admin Create User component, error handling is mainly implemented through frontend form validation and backend validation logic.
 
+```html
 <input type="text" name="username" class="form-control" required>
 
 <input type="email" name="email" class="form-control" required>
@@ -104,10 +115,13 @@ In the Super Admin Create User component, error handling is mainly implemented t
 <input type="password" name="password" class="form-control" required minlength="4">
 
 <select name="role" class="form-select" required>
-    
+```
+
 These required attributes ensure that users cannot submit the form unless all mandatory fields are filled. This prevents empty or incomplete data from being sent to the backend.
+
 Additionally, the system handles role-based dynamic fields in the interface:
 
+```javascript
 function toggleRoleFields() {
 
     const role = document.getElementById('roleSelect').value;
@@ -117,30 +131,39 @@ function toggleRoleFields() {
     document.getElementById('specialtyField').style.display = role === 'handyman' ? '' : 'none';
     
 }
+```
 
 This ensures that only relevant fields are shown based on the selected user role (Admin, Resident, Handyman).
+
 On the backend, the system processes the data and performs validation before storing it in the database:
 
+```python
 if User.query.filter((User.username == username) | (User.email == email)).first():
 
     flash("Username or email already exists.", "danger")
-    
+```
+
 This prevents duplicate usernames or emails from being created in the system.
+
 If validation passes, the user is created and stored:
 
+```python
 user = User(...)
 
 db.session.add(user)
 
 db.session.commit()
+```
 
 Further validation is enforced by the database model:
 
+```python
 username = db.Column(db.String(80), unique=True, nullable=False)
 
 email = db.Column(db.String(120), unique=True, nullable=False)
 
 password = db.Column(db.String(200), nullable=False)
+```
 
 These constraints ensure that required fields cannot be null and that usernames and emails remain unique, providing an additional layer of data integrity.
 
