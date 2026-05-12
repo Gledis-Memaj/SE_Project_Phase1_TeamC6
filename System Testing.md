@@ -84,7 +84,11 @@ These constraints ensure that required fields cannot be null, providing an addit
 
 ## 6.1  Running Tests
 The tests were executed directly within the system environment we developed. The booking form was tested by interacting with the application through the user interface and submitting different inputs.
+![T1.1](test/T1.1.png)
 
+![T1.2](test/T1.2.png)
+
+![T1.3](test/T1.3.png)
 
 
 ## 3.2 Focus on Testing a Single Component
@@ -169,6 +173,14 @@ These constraints ensure that required fields cannot be null and that usernames 
 
 ## 6.2 Running Tests
 The tests were executed directly within the system environment we developed. The Create User form was tested by interacting with the application through the user interface and submitting different inputs for various user roles (Admin, Resident, Handyman).
+![T2.1](test/T2.1.png)
+
+![T2.2](test/T2.2.png)
+
+![T2.3](test/T2.3.png)
+
+![T2.4](test/T2.4.png)
+
 
 ## 7. Test Coverage
 Test coverage is important because it ensures that different parts of the system are tested, helping to detect errors early and improve the reliability and quality of the software.
